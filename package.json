@@ -1,0 +1,19 @@
+{
+  "name": "JSBUILDATHON",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "azure": "node sample.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "@azure-rest/ai-inference": "latest",
+    "@azure/core-auth": "latest",
+    "@azure/core-sse": "latest",
+    "dotenv": "^16.5.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
