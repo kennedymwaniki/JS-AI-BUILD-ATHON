@@ -3,7 +3,7 @@ import ModelClient from "@azure-rest/ai-inference";
 import { AzureKeyCredential } from "@azure/core-auth";
 
 dotenv.config();
-// console.log("KEY:", process.env.AZURE_INFERENCE_API_KEY);
+console.log("KEY:", process.env.AZURE_INFERENCE_API_KEY);
 
 const client = new ModelClient(
   process.env.AZURE_INFERENCE_SDK_ENDPOINT,
