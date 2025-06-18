@@ -4,6 +4,8 @@ import { AzureKeyCredential } from "@azure/core-auth";
 
 dotenv.config();
 console.log("KEY:", process.env.AZURE_INFERENCE_API_KEY);
+console.log("Using endpoint:", process.env.AZURE_INFERENCE_SDK_ENDPOINT);
+console.log("Using model:", process.env.AZUREAI_MODEL || "gpt-4o");
 
 const client = new ModelClient(
   process.env.AZURE_INFERENCE_SDK_ENDPOINT,
@@ -22,5 +24,12 @@ var response = await client.path("/chat/completions").post({
     max_tokens: 4096,
   },
 });
+
+console.log("Response :", response);
+console.log("Response status:", response.status);
+console.log(
+  "Response body structure:",
+  JSON.stringify(Object.keys(response.body), null, 2)
+);
 
 console.log(response.body.choices[0].message.content);
