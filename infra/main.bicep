@@ -73,7 +73,7 @@ module webapi 'br/public:avm/res/web/site:0.15.1' = {
   }
 }
 
-param webapiName string = 'azuremodelapi' #use a unique string. avoid common names like webapi, website etc.
+param webapiName string = 'azuremodelapi'
 param appServicePlanName string = 'appserviceplan'
 
 output WEBAPP_URL string = webapp.outputs.defaultHostname
