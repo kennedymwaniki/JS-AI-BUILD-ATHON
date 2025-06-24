@@ -8,7 +8,7 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
-import pdfParse from "pdf-parse/lib/pdf-parse.js";
+import pdfParse from "pdf-parse/lib/pdf-parse";
 
 dotenv.config();
 console.log("KEY:", process.env.AZURE_INFERENCE_API_KEY);
