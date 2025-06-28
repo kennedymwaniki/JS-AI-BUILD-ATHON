@@ -1,7 +1,5 @@
 const changes = await git.diff({ staged: true });
 
-// major fix
-
 defDiff("CODE_CHANGES", changes);
 
 $`## Role
